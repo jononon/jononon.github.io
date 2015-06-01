@@ -7,13 +7,18 @@ maintitle{
 sectionheader{
   font-family: 'Roboto', sans-serif;
   font-size: 2em;
-  font-style: italic;
+  text-decoration: underline;
+  font-weight: bold;
 }
 
 headertwo{
   font-family: 'Roboto', sans-serif;
   font-size: 1.7em;
   font-weight: bold;
+}
+
+position{
+  font-style: italic;
 }
 
 body {
