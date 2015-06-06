@@ -1,8 +1,17 @@
 maintitle{
   font-family: 'Roboto', sans-serif;
-  font-size: 5em;
+  font-size: 2em;
+  font-size: 3vw;
   font-weight: bold;
   z-index: 2;
+  text-align: justify;
+}
+
+maintitle.name{
+  font-size: 4em;
+  font-size: 11vw;
+  text-align: center;
+
 }
 
 sectionheader{
@@ -24,4 +33,16 @@ position{
 
 body {
   font-family: 'Roboto', sans-serif;
+}
+
+colour.imp_1 {
+  color: #000000;
+}
+
+colour.imp_2 {
+  color: #474747;
+}
+
+colour.imp_3 {
+  color: #878787;
 }
