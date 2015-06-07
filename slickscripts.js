@@ -9,7 +9,7 @@ $(document).ready(function() {
         slidesToShow: 1,
         variableWidth: false,
     });
-     $('.slider-for').slick({
+     $('.projectsviewer').slick({
         slidesToShow: 1,
         slidesToScroll: 1,
         arrows: false,
