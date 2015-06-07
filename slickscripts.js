@@ -9,4 +9,14 @@ $(document).ready(function() {
         slidesToShow: 1,
         variableWidth: false,
     });
+    $('.projects').slick({
+        dots: true,
+        infinite: true,
+        autoplay: true,
+        autoplaySpeed: 3000,
+        fade: false,
+        pauseOnHover: false,
+        slidesToShow: 3,
+        variableWidth: false,
+    });
 });
