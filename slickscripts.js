@@ -9,6 +9,13 @@ $(document).ready(function() {
         slidesToShow: 1,
         variableWidth: false,
     });
+     $('.slider-for').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false,
+        fade: true,
+        asNavFor: '.projects'
+      });
     $('.projects').slick({
         dots: true,
         infinite: true,
@@ -18,5 +25,6 @@ $(document).ready(function() {
         pauseOnHover: false,
         slidesToShow: 3,
         variableWidth: false,
+        asNavFor: '.projectsviewer',
     });
 });
