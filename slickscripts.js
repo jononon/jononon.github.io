@@ -28,5 +28,7 @@ $(document).ready(function() {
         slidesToShow: 3,
         variableWidth: false,
         asNavFor: '.projectsviewer',
+        focusOnSelect: true,
+        arrows: true,
     });
 });
