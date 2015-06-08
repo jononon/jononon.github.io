@@ -14,6 +14,7 @@ $(document).ready(function() {
         slidesToScroll: 1,
         arrows: true,
         fade: true,
+        pauseOnHover: true,
         asNavFor: '.projects'
       });
     $('.projects').slick({
