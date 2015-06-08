@@ -158,22 +158,28 @@ title {
 }
 
 #sticky {
-    padding: 0.5ex;
-    width: 600px;
-    background-color: #333;
-    color: #fff;
+    width: 100%;
     font-size: 2em;
-    border-radius: 0.5ex;
+    font-weight: bold;
+
 }
 #sticky.stick {
     position: fixed;
     top: 0;
     z-index: 10000;
-    border-radius: 0 0 0.5em 0.5em;
 }
 body {
     margin: 1em;
 }
 p {
     margin: 1em auto;
+}
+
+.evenspace > div {
+    display: inline-block;
+    *display: inline; /* For IE7 */
+    zoom: 1; /* Trigger hasLayout */
+    width: 33%;
+    text-align: center;
+    background-color: #F7F7F7;
 }
