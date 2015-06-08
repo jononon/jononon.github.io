@@ -152,3 +152,12 @@ img.icon {
   width: 50%;
 }
 
+title {
+  position: fixed;
+  max-height: 100%;
+}
+
+menubar.sticky {
+  position: fixed;
+  top: 0;
+}
