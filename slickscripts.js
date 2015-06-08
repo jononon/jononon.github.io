@@ -27,5 +27,4 @@ $(document).ready(function() {
         variableWidth: false,
         asNavFor: '.projectsviewer',
     });
-    $('#main-content').fadeIn();
 });
