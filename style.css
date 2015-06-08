@@ -159,7 +159,7 @@ title {
 
 #sticky {
     width: 100%;
-    font-size: 2em;
+    font-size: 1.5em;
     font-weight: bold;
     background: #fff;
 
@@ -180,7 +180,7 @@ p {
     display: inline-block;
     *display: inline; /* For IE7 */
     zoom: 1; /* Trigger hasLayout */
-    width: 25%;
+    width: 24.55%;
     text-align: center;
     background-color: #F7F7F7;
 }
