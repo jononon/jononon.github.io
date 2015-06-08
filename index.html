@@ -10,6 +10,9 @@
         <script type="text/javascript" src="http://kenwheeler.github.io/slick/slick/slick.js"></script>
         <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.5.5/slick.min.js"></script>
         <script type="text/javascript" src="slickscripts.js"></script>
+        <script type="text/javascript" src="stickscripts.js"></script>
+        <script type="text/javascript" src="jquery.sticky-div.js"></script>
+        
     </head>
     <body>
         <center>
@@ -43,16 +46,16 @@
         <hr></hr>
         <script>// Cache selectors outside callback for performance. 
             var $window = $(window),
-            $stickyEl = $('menubar'),
+            $stickyEl = $('#menubar'),
             elTop = $stickyEl.offset().top;
          
             $window.scroll(function() {
                  $stickyEl.toggleClass('sticky', $window.scrollTop() > elTop);
-            });
+            });s
         </script>
-        <menubar>
+        <div id="my_div">
             Test
-        </menubar>
+        </div>
         <margins>
             <center>
                 <sectionheader>

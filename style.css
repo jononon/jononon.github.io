@@ -157,7 +157,7 @@ title {
   max-height: 100%;
 }
 
-menubar.sticky {
+#menubar.sticky {
   position: fixed;
   top: 0;
 }
