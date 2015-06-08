@@ -147,3 +147,7 @@ a.nav-link-white:active
     -1px 1px 0 #fff,
     1px 1px 0 #fff;  
 }
+
+img.icon {
+  width: 50%;
+}
