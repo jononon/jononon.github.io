@@ -13,9 +13,10 @@ $(document).ready(function() {
         slidesToShow: 1,
         slidesToScroll: 1,
         arrows: true,
-        fade: true,
+        fade: false,
         pauseOnHover: true,
-        asNavFor: '.projects'
+        asNavFor: '.projects',
+        vertical: true,
       });
     $('.projects').slick({
         dots: true,
