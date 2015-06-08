@@ -12,7 +12,7 @@ $(document).ready(function() {
      $('.projectsviewer').slick({
         slidesToShow: 1,
         slidesToScroll: 1,
-        arrows: false,
+        arrows: true,
         fade: true,
         asNavFor: '.projects'
       });
@@ -22,7 +22,7 @@ $(document).ready(function() {
         autoplay: true,
         autoplaySpeed: 3000,
         fade: false,
-        pauseOnHover: false,
+        pauseOnHover: true,
         slidesToShow: 3,
         variableWidth: false,
         asNavFor: '.projectsviewer',
