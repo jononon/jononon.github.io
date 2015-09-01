@@ -11,7 +11,12 @@ maintitle.name{
   font-size: 4em;
   font-size: 11vw;
   text-align: center;
+}
 
+maintitle.menu{
+  font-size: 2em;
+  font-size: 5vw;
+  text-align: center;
 }
 
 sectionheader{
@@ -231,4 +236,20 @@ p {
   transform: translate(-50%, -50%);   /* 4 */
   left: 50%;
   margin-right: -50%;
+}
+
+mainhead {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 35;
+  font-weight: 100;
+}
+
+maintext {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 25;
+  font-weight: 100;
 }
