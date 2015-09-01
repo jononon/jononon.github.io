@@ -106,7 +106,26 @@ a.nav-link:active
    text-decoration: none;
    color: #474747;
 }
-
+a:link
+{
+   text-decoration: none;
+   color: #000;
+}
+a:visited
+{
+   text-decoration: none;
+   color: #000;
+}
+a:hover
+{
+   text-decoration: none;
+   color: #474747;
+}
+a:active
+{
+   text-decoration: none;
+   color: #474747;
+}
 a.nav-link-white:link
 {
    text-decoration: none;
@@ -213,3 +232,5 @@ p {
   left: 50%;
   margin-right: -50%;
 }
+
+div#main-content { display: none; }
