@@ -17,8 +17,9 @@
         <script>
           $(function(){
               $(".name").typed({
-                strings: ["First sentence.", "Second sentence."],
-                typeSpeed: 30
+                stringsElement: $('#typed-strings'),
+                typeSpeed: 30,
+                loop:true
               });
           });
         </script>
@@ -37,7 +38,12 @@
                   <colour class="imp_3">Production Visual Effects</colour>
                   <colour class="imp_2">Projection</colour>
                 </div>
-                <maintitle class="name"><div></div></maintitle>
+                <div id="typed-strings">
+                  <p>Typed.js is a <strong>jQuery</strong> plugin.</p>
+                  <p>It <em>types</em> out sentences.</p>
+                  <p>And then deletes them.</p>
+                  <p>Try it out!</p>
+              </div>
                 <div>
                   <colour class="imp_3">Guitar Clarinet Sibelius Composing</colour>
                   <colour class="imp_2">Music</colour>
