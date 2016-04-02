@@ -41,14 +41,20 @@
         typeSpeed: 0
       });
 
+      $("#splitflap").splitflap({
+      	initial: "HELLO",
+      	glyphSet: [" ","A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z",".","?","!",","]
+      });
+            /*
       function clockInput(time) {
         return [time.toString("h"), time.toString("mm"), time.toString("ss"), time.toString("tt")];
       }
 
       var now = new Date();
+
       var clock = $("#clock").splitflap({
         glyphSet: {
-          ".hours.twelve": $.splitflap.twelve,
+          ".hours.twelve": $.splitflap.twentyfour,
           ".minutes": $.splitflap.minutes,
           ".seconds": $.splitflap.minutes,
           ".ampm": ["AM", "PM"]
@@ -62,12 +68,14 @@
         $("#clock").splitflap("value", clockInput(now));
       }
       setTimeout(updateClock, (62 - now.getSeconds()) * 1000);
+      */
     });
   </script>
   <div class=grid>
     <div class="grid__col grid__col--1-of-3">
       <div class="dj"></div>
       <div class="dj_city"></div>
+      <div class="splitflap"></div>
       <div class="clock">
         <div class="segment hours twentyfour">
         </div> :
