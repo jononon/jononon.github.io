@@ -9,6 +9,8 @@
   <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.5.5/slick.min.js"></script>
   <script type="text/javascript" src="typed.js"></script>
   <link rel="stylesheet" href="/grid.css">
+  <script type="text/javascript" src="splitflap.js"></script>
+  <link type="text/css" rel="stylesheet" href="splitflap.css">
 </head>
 <body>
   <style>
@@ -36,36 +38,51 @@
   </style>
   <script>
   $(function(){
-      $(".dj").typed({
-        strings: ["DJ Lesh"],
-        typeSpeed: 0
-      });
-      $(".cam").typed({
-        strings: ["Cameron Schiller"],
-        typeSpeed: 0
-      });
-      $(".jon").typed({
-        strings: ["Jonathan Damico"],
-        typeSpeed: 0
-      });
-      $(".dj_city").typed({
-        strings: ["Los Angeles, California"],
-        typeSpeed: 0
-      });
-      $(".cam_city").typed({
-        strings: ["Park City, Utah"],
-        typeSpeed: 0
-      });
-      $(".jon_city").typed({
-        strings: ["London, England"],
-        typeSpeed: 0
-      });
+    $(".dj").typed({
+      strings: ["DJ Lesh"],
+      typeSpeed: 0
+    });
+    $(".cam").typed({
+      strings: ["Cameron Schiller"],
+      typeSpeed: 0
+    });
+    $(".jon").typed({
+      strings: ["Jonathan Damico"],
+      typeSpeed: 0
+    });
+    $(".dj_city").typed({
+      strings: ["Los Angeles, California"],
+      typeSpeed: 0
+    });
+    $(".cam_city").typed({
+      strings: ["Park City, Utah"],
+      typeSpeed: 0
+    });
+    $(".jon_city").typed({
+      strings: ["London, England"],
+      typeSpeed: 0
+    });
+    $(".clock").splitflap({
+      glyphSet: {
+        ".hours.twentyfour": $.splitflap.twentyfour,
+        ".minutes": $.splitflap.minutes,
+        ".ampm": ["AM", "PM"]
+      }
+    });
   });
 </script>
   <div class=grid>
     <div class="grid__col grid__col--1-of-3">
       <div class="dj"></div>
       <div class="dj_city"></div>
+      <div class="clock">
+        <div class="segment hours twentyfour">
+        </div> :
+        <div class="segment minutes">
+        </div>
+        <div class="segment ampm">
+        </div>
+    </div>
     </div>
     <div class="grid__col grid__col--1-of-3">
       <div class="cam"></div>
