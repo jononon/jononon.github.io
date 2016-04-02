@@ -12,65 +12,60 @@
   <script type="text/javascript" src="splitflap.js"></script>
   <link type="text/css" rel="stylesheet" href="splitflap.css">
 </head>
+
 <body>
-  <style>
-    .typed-cursor{
-        opacity: 1;
-        -webkit-animation: blink 0.7s infinite;
-        -moz-animation: blink 0.7s infinite;
-        animation: blink 0.7s infinite;
-    }
-    @keyframes blink{
-        0% { opacity:1; }
-        50% { opacity:0; }
-        100% { opacity:1; }
-    }
-    @-webkit-keyframes blink{
-        0% { opacity:1; }
-        50% { opacity:0; }
-        100% { opacity:1; }
-    }
-    @-moz-keyframes blink{
-        0% { opacity:1; }
-        50% { opacity:0; }
-        100% { opacity:1; }
-    }
-  </style>
   <script>
-  $(function(){
-    $(".dj").typed({
-      strings: ["DJ Lesh"],
-      typeSpeed: 0
-    });
-    $(".cam").typed({
-      strings: ["Cameron Schiller"],
-      typeSpeed: 0
-    });
-    $(".jon").typed({
-      strings: ["Jonathan Damico"],
-      typeSpeed: 0
-    });
-    $(".dj_city").typed({
-      strings: ["Los Angeles, California"],
-      typeSpeed: 0
-    });
-    $(".cam_city").typed({
-      strings: ["Park City, Utah"],
-      typeSpeed: 0
-    });
-    $(".jon_city").typed({
-      strings: ["London, England"],
-      typeSpeed: 0
-    });
-    $(".clock").splitflap({
-      glyphSet: {
-        ".hours.twentyfour": $.splitflap.twentyfour,
-        ".minutes": $.splitflap.minutes,
-        ".ampm": ["AM", "PM"]
+    $(function() {
+      $(".dj").typed({
+        strings: ["DJ Lesh"],
+        typeSpeed: 0
+      });
+      $(".cam").typed({
+        strings: ["Cameron Schiller"],
+        typeSpeed: 0
+      });
+      $(".jon").typed({
+        strings: ["Jonathan Damico"],
+        typeSpeed: 0
+      });
+      $(".dj_city").typed({
+        strings: ["Los Angeles, California"],
+        typeSpeed: 0
+      });
+      $(".cam_city").typed({
+        strings: ["Park City, Utah"],
+        typeSpeed: 0
+      });
+      $(".jon_city").typed({
+        strings: ["London, England"],
+        typeSpeed: 0
+      });
+
+      function clockInput(time) {
+        return [time.toString("h"), time.toString("mm"), time.toString("ss"), time.toString("tt")];
       }
+
+      var now = new Date();
+      var clock = $("#clock").splitflap({
+        glyphSet: {
+          ".hours.twelve": $.splitflap.twelve,
+          ".minutes": $.splitflap.minutes,
+          ".seconds": $.splitflap.minutes,
+          ".ampm": ["AM", "PM"]
+        },
+        initial: clockInput(now)
+      });
+
+      function updateClock() {
+        var now = new Date();
+        setTimeout(updateClock, (62 - now.getSeconds()) * 1000);
+        $("#clock").splitflap("value", clockInput(now));
+      }
+      setTimeout(updateClock, (62 - now.getSeconds()) * 1000);
+
+      });
     });
-  });
-</script>
+  </script>
   <div class=grid>
     <div class="grid__col grid__col--1-of-3">
       <div class="dj"></div>
@@ -82,7 +77,7 @@
         </div>
         <div class="segment ampm">
         </div>
-    </div>
+      </div>
     </div>
     <div class="grid__col grid__col--1-of-3">
       <div class="cam"></div>
