@@ -11,6 +11,7 @@
   <script type="text/javascript" src="typed.js"></script>
   <link rel="stylesheet" href="/grid.css">
   <script type="text/javascript" src="splitflap.js"></script>
+  <script type="text/javascript" src="http:////cdnjs.cloudflare.com/ajax/libs/datejs/1.0/date.min.js"></script>
   <link type="text/css" rel="stylesheet" href="splitflap.css">
 </head>
 
@@ -46,11 +47,13 @@
       	initial: "DJ LESH",
       	glyphSet: [" ","A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z",".","?","!",","]
       });
-            /*
+
       function clockInput(time) {
         return [time.toString("h"), time.toString("mm"), time.toString("ss"), time.toString("tt")];
       }
-
+    });
+    
+    $(window).load(function(){
       var now = new Date();
 
       var clock = $("#clock").splitflap({
@@ -69,7 +72,6 @@
         $("#clock").splitflap("value", clockInput(now));
       }
       setTimeout(updateClock, (62 - now.getSeconds()) * 1000);
-      */
     });
   </script>
   <div class=grid>
