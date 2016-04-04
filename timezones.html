@@ -52,8 +52,12 @@
         return [time.toString("h"), time.toString("mm"), time.toString("ss"), time.toString("tt")];
       }
     });
-    
+
     $(window).load(function(){
+      function clockInput(time) {
+    		return [time.toString("h"), time.toString("mm"), time.toString("tt")];
+    	}
+
       var now = new Date();
 
       var clock = $("#clock").splitflap({
