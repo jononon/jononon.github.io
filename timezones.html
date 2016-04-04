@@ -47,16 +47,12 @@
       	initial: "DJ LESH",
       	glyphSet: [" ","A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z",".","?","!",","]
       });
-
-      function clockInput(time) {
-        return [time.toString("h"), time.toString("mm"), time.toString("ss"), time.toString("tt")];
-      }
     });
 
     $(window).load(function(){
       function clockInput(time) {
-    		return [time.toString("h"), time.toString("mm"), time.toString("tt")];
-    	}
+        return [time.toString("h"), time.toString("mm"), time.toString("ss"), time.toString("tt")];
+      }
 
       var now = new Date();
 
